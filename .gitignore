@@ -1,27 +1,6 @@
-# This file is used to ignore files that should not be committed.
 node_modules/
 build/
-dist/
 .DS_Store
-Thumbs.db
-
-# This file is used to ignore local API keys and secret files.
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 backend/.env
-
-# This file is used to ignore React build output.
-frontend/build/
-
-# This file is used to ignore editor files.
-.vscode/
-.idea/
-
-# This file is used to ignore log files.
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-

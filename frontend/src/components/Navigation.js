@@ -1,4 +1,4 @@
-// This code is used to display the Week 8 MVP navigation tabs.
+// This code is used to display the main MVP navigation.
 function Navigation({ activeView, onChangeView }) {
   const views = [
     { id: "dashboard", label: "Dashboard" },
@@ -12,11 +12,7 @@ function Navigation({ activeView, onChangeView }) {
   return (
     <nav className="nav-tabs">
       {views.map((view) => (
-        <button
-          key={view.id}
-          className={activeView === view.id ? "active-tab" : ""}
-          onClick={() => onChangeView(view.id)}
-        >
+        <button key={view.id} className={activeView === view.id ? "active-tab" : ""} onClick={() => onChangeView(view.id)}>
           {view.label}
         </button>
       ))}
