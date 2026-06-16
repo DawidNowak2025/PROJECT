@@ -1,0 +1,993 @@
+/* This code is used to set the main global page style. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef4eb;
+  color: #1d301f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This code is used to style the application wrapper. */
+.app {
+  min-height: 100vh;
+}
+
+/* This code is used to style the application header. */
+.hero {
+  background: linear-gradient(135deg, #284c2a, #6c9b45);
+  color: white;
+  padding: 36px 8%;
+}
+
+.hero h1 {
+  margin: 6px 0 12px;
+  font-size: 42px;
+}
+
+.hero p {
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+/* This code is used to place navigation and management menu on one row. */
+.top-navigation-row {
+  width: 90%;
+  max-width: 1250px;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+/* This code is used to style the main navigation tabs. */
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-tabs button {
+  background: white;
+  color: #245127;
+  border: 1px solid #c8d9bf;
+}
+
+.nav-tabs .active-tab {
+  background: #245127;
+  color: white;
+}
+
+/* This code is used to style the hamburger management button. */
+.settings-menu-button {
+  white-space: nowrap;
+  background: #245127;
+  color: white;
+  border: 1px solid #245127;
+  min-height: 42px;
+}
+
+/* This code is used to control the page layout. */
+.layout {
+  width: 90%;
+  max-width: 1250px;
+  margin: 24px auto;
+  display: grid;
+  gap: 24px;
+}
+
+/* This code is used to style standard content cards. */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 22px rgba(33, 58, 33, 0.12);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #245127;
+}
+
+/* This code is used to style dashboard summary cards. */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+}
+
+.dashboard-card {
+  background: white;
+  color: #1d301f;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(33, 58, 33, 0.12);
+  border: 0;
+  border-left: 6px solid #376b39;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dashboard-card span {
+  display: block;
+  color: #586b54;
+  font-weight: bold;
+}
+
+.dashboard-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 34px;
+}
+
+.dashboard-card.warning {
+  border-left-color: #c49a21;
+}
+
+.dashboard-card.danger {
+  border-left-color: #b23b32;
+}
+
+.dashboard-card.issue {
+  border-left-color: #7b4fa0;
+}
+
+.mini-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+/* This code is used to style messages and filters. */
+.message,
+.filter-row {
+  width: 100%;
+  background: #e4f2dd;
+  border-left: 6px solid #245127;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.message {
+  width: 90%;
+  max-width: 1250px;
+  margin: 20px auto 0;
+  justify-content: space-between;
+}
+
+.active-filter {
+  outline: 3px solid #87aa74;
+}
+
+/* This code is used to style forms. */
+.plant-form,
+.history-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #cbd9c4;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* This code is used to style buttons. */
+button {
+  background: #245127;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.secondary-button {
+  background: #657760;
+}
+
+.danger-button,
+.modal-close-button {
+  background: #a9362e;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* This code is used to style recommendation and information boxes. */
+.recommendation-box,
+.zone-message,
+.marker-picker-box {
+  background: #edf7e9;
+  border-left: 5px solid #6c9b45;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.recommendation-box p {
+  margin: 6px 0;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* This code is used to style search input. */
+.search-box {
+  margin-top: 18px;
+}
+
+.search-box input {
+  width: 100%;
+}
+
+/* This code is used to style plant cards. */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 22px;
+}
+
+.plant-card {
+  background: #fbfdf9;
+  border: 1px solid #d4e3cd;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.photo-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 170px;
+}
+
+.photo-row img,
+.photo-placeholder {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #dce8d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52634d;
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid #cddcc6;
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+.plant-card-content {
+  padding: 18px;
+}
+
+.plant-card-content h3 {
+  margin-top: 0;
+  color: #245127;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #e6eee1;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.health-healthy,
+.water-upcoming {
+  background: #d8f0d0;
+  color: #245127;
+}
+
+.health-needs-water,
+.water-water-today {
+  background: #fff0be;
+  color: #775b00;
+}
+
+.health-pest-issue,
+.health-wilting,
+.water-overdue {
+  background: #ffd8d4;
+  color: #8a2118;
+}
+
+.health-harvest-ready {
+  background: #dce9ff;
+  color: #254f87;
+}
+
+.plant-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* This code is used to style the photo-based garden map. */
+.photo-map-grid {
+  display: grid;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.photo-map-zone {
+  border: 1px solid #d4e3cd;
+  background: #fbfdf9;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.active-photo-map-zone {
+  outline: 3px solid #87aa74;
+}
+
+.photo-map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.photo-map-header button {
+  background: transparent;
+  color: #245127;
+  padding: 0;
+  font-size: 22px;
+  text-align: left;
+}
+
+.photo-map-header span {
+  font-weight: bold;
+  color: #5d6d58;
+}
+
+.photo-map-image-wrap,
+.zone-photo-marker-picker {
+  position: relative;
+  min-height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #dce8d5;
+  border: 1px solid #cbd9c4;
+}
+
+.photo-map-image-wrap img,
+.zone-photo-marker-picker img {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+}
+
+.photo-map-placeholder {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52634d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plant-map-pin {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 36px;
+  height: 36px;
+  border-radius: 50% 50% 50% 0;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.healthy-pin,
+.selected-pin {
+  background: #245127;
+}
+
+.warning-pin {
+  background: #c49a21;
+}
+
+.danger-pin {
+  background: #a9362e;
+}
+
+.zone-photo-marker-picker {
+  cursor: crosshair;
+  margin-top: 12px;
+}
+
+.zone-photo-marker-picker img {
+  height: 320px;
+}
+
+.photo-map-plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.photo-map-plant-list button {
+  background: #e6eee1;
+  color: #245127;
+  padding: 8px 10px;
+}
+
+/* This code is used to style tables. */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid #d4e3cd;
+  padding: 12px;
+}
+
+th {
+  background: #edf7e9;
+}
+
+/* This code is used to style logs and history. */
+.history-list,
+.activity-list {
+  margin-top: 18px;
+  background: #fbfdf9;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.history-list li,
+.activity-list li {
+  margin-bottom: 10px;
+}
+
+.activity-list {
+  list-style: none;
+}
+
+.activity-list li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  border-bottom: 1px solid #d4e3cd;
+  padding-bottom: 10px;
+}
+
+.small-text {
+  color: #5d6d58;
+}
+
+/* This code is used to style the full-screen image preview. */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 92vw;
+  max-height: 92vh;
+  color: white;
+}
+
+.image-modal-content img {
+  max-width: 92vw;
+  max-height: 82vh;
+  border-radius: 14px;
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background: #a9362e;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+
+/* This code is used to style garden zone and plant type managers. */
+.zone-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.zone-message {
+  margin-top: 14px;
+}
+
+.zone-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.zone-list span {
+  background: #e6eee1;
+  color: #245127;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.manager-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.manager-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+  align-items: center;
+  background: #fbfdf9;
+  border: 1px solid #d4e3cd;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.manager-row span,
+.manager-row strong {
+  font-weight: bold;
+  color: #245127;
+}
+
+.zone-manager-photo-row {
+  grid-template-columns: 1.2fr 1.5fr auto;
+}
+
+.zone-manager-info {
+  display: grid;
+  gap: 8px;
+}
+
+.zone-manager-info img {
+  width: 180px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #d4e3cd;
+}
+
+.zone-upload-controls,
+.zone-action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* This code is used to style external API search sections. */
+.api-search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.api-result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.api-result-card {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  background: #fbfdf9;
+  border: 1px solid #d4e3cd;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.api-result-card img,
+.api-details img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.api-details {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+}
+
+.api-details img {
+  height: 220px;
+}
+
+.weather-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.weather-summary div {
+  background: #edf7e9;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.weather-summary strong {
+  display: block;
+  font-size: 22px;
+  color: #245127;
+}
+
+/* This code is used to style login and register page. */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #284c2a, #6c9b45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: white;
+  color: #1d301f;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h1 {
+  margin-top: 8px;
+  color: #245127;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.auth-tabs button {
+  flex: 1;
+  background: #e6eee1;
+  color: #245127;
+}
+
+.auth-tabs .active-tab {
+  background: #245127;
+  color: white;
+}
+
+.auth-form {
+  display: grid;
+  gap: 16px;
+}
+
+.auth-message {
+  margin-top: 14px;
+  background: #ffd8d4;
+  color: #8a2118;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* This code is used to show the logged-in user above the page content. */
+.user-bar {
+  width: 90%;
+  max-width: 1250px;
+  margin: 14px auto 0;
+  background: white;
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 6px 18px rgba(33, 58, 33, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* This code is used to style the settings overlay and side panel. */
+.settings-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settings-panel {
+  width: min(720px, 96vw);
+  height: 100vh;
+  overflow-y: auto;
+  background: #eef4eb;
+  padding: 24px;
+  box-shadow: -12px 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.settings-panel-header {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(33, 58, 33, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.settings-panel-header h2 {
+  margin: 6px 0 0;
+  color: #245127;
+}
+
+.settings-panel-content {
+  display: grid;
+  gap: 22px;
+}
+
+.settings-panel .card {
+  padding: 20px;
+}
+
+.settings-panel .zone-form,
+.settings-panel .zone-manager-photo-row {
+  grid-template-columns: 1fr;
+}
+
+/* This code is used to style the footer. */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #5d6d58;
+}
+
+/* This code is used to improve layout on smaller screens. */
+@media (max-width: 760px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .plant-form,
+  .history-form,
+  .api-search-form,
+  .api-result-card,
+  .api-details,
+  .manager-row,
+  .zone-manager-photo-row {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title-row,
+  .top-navigation-row {
+    flex-direction: column;
+  }
+
+  .photo-row {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .layout,
+  .message,
+  .top-navigation-row,
+  .user-bar {
+    width: 94%;
+  }
+
+  .settings-menu-button {
+    width: 100%;
+  }
+
+  .settings-panel {
+    width: 100vw;
+  }
+
+  .photo-map-image-wrap img,
+  .zone-photo-marker-picker img {
+    height: 260px;
+  }
+}
+
+
+/* This code is used to make the plants tab faster by showing one image per card. */
+.compact-plant-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.single-photo-row {
+  width: 100%;
+  height: 210px;
+  background: #dce8d5;
+  overflow: hidden;
+}
+
+.single-photo-row img,
+.single-photo-row .photo-placeholder {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This code is used to show full plant details only when the user asks for it. */
+.details-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 8500;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px 18px;
+  overflow-y: auto;
+}
+
+.details-modal {
+  width: min(980px, 96vw);
+  background: #eef4eb;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+}
+
+.details-header {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(33, 58, 33, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.details-header h2 {
+  margin: 6px 0 0;
+  color: #245127;
+}
+
+.details-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.details-photo-grid > div,
+.details-info-grid,
+.details-notes,
+.details-history {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(33, 58, 33, 0.12);
+}
+
+.details-photo-grid img,
+.details-photo-grid .photo-placeholder {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #dce8d5;
+}
+
+.details-info-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 10px 18px;
+}
+
+.details-notes,
+.details-history {
+  margin-top: 18px;
+}
+
+.details-history ul {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .details-photo-grid,
+  .details-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details-photo-grid img,
+  .details-photo-grid .photo-placeholder {
+    height: 220px;
+  }
+}
