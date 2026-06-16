@@ -1,0 +1,27 @@
+{
+  "vegetable": {
+    "wateringFrequency": 3,
+    "sunlight": "Full sun",
+    "advice": "Vegetables usually need regular water and sunlight."
+  },
+  "herb": {
+    "wateringFrequency": 2,
+    "sunlight": "Partial sun",
+    "advice": "Herbs grow well in pots, but soil should not fully dry."
+  },
+  "flower": {
+    "wateringFrequency": 4,
+    "sunlight": "Mixed sunlight",
+    "advice": "Flowers should be checked often for dry soil and pests."
+  },
+  "houseplant": {
+    "wateringFrequency": 7,
+    "sunlight": "Indirect light",
+    "advice": "Houseplants normally need less water than outdoor plants."
+  },
+  "default": {
+    "wateringFrequency": 5,
+    "sunlight": "Check plant label",
+    "advice": "No exact recommendation found."
+  }
+}
