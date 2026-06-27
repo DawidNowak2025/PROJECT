@@ -1,18 +1,24 @@
-// This code is used to display activity history.
+// This code is used to display automatic garden activity log.
 function ActivityLog({ activity }) {
   return (
     <section className="card">
-      <h2>Activity Log</h2>
-      <p className="small-text">This section records plant updates, watering actions and garden changes.</p>
+      <h2>Garden Activity Log</h2>
+      <p className="small-text">
+        This log records important tracker actions, such as adding, watering, updating and deleting plants.
+      </p>
 
-      <ul className="activity-list">
-        {activity.map((item) => (
-          <li key={item.id}>
-            <strong>{item.date}</strong>
-            <span>{item.text}</span>
-          </li>
-        ))}
-      </ul>
+      {activity.length === 0 ? (
+        <p>No activity yet.</p>
+      ) : (
+        <ul className="activity-list">
+          {activity.map((item) => (
+            <li key={item.id}>
+              <strong>{item.date}</strong>
+              <span>{item.text}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   );
 }

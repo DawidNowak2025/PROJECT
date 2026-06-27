@@ -1,4 +1,4 @@
-// This code is used to display watering schedule information.
+// This code is used to display watering tracker table.
 function WateringSchedule({ plants, filter, onWater }) {
   let filteredPlants = plants;
 
@@ -10,25 +10,47 @@ function WateringSchedule({ plants, filter, onWater }) {
     filteredPlants = plants.filter((plant) => plant.wateringStatus === "Overdue");
   }
 
+  const sortedPlants = [...filteredPlants].sort((a, b) => {
+    if (!a.nextWateringDate) return 1;
+    if (!b.nextWateringDate) return -1;
+    return a.nextWateringDate.localeCompare(b.nextWateringDate);
+  });
+
   return (
     <section className="card">
-      <h2>Watering Schedule</h2>
-      <p>Showing {filteredPlants.length} watering record(s).</p>
+      <h2>Watering Tracker</h2>
+      <p className="small-text">Current filter: {filter === "all" ? "All watering records" : filter}</p>
 
-      <div className="plant-grid">
-        {filteredPlants.map((plant) => (
-          <article className="plant-card" key={plant.id}>
-            <div className="plant-card-content">
-              <h3>{plant.name}</h3>
-              <p><strong>Garden Zone:</strong> {plant.gardenZone}</p>
-              <p><strong>Last Watered:</strong> {plant.lastWatered || "Not set"}</p>
-              <p><strong>Frequency:</strong> Every {plant.wateringFrequency || "?"} day(s)</p>
-              <p><strong>Next Watering:</strong> {plant.nextWateringDate || "Not set"}</p>
-              <p><strong>Status:</strong> {plant.wateringStatus}</p>
-              <button onClick={() => onWater(plant.id)}>Water Today</button>
-            </div>
-          </article>
-        ))}
+      <div className="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Plant</th>
+              <th>Zone</th>
+              <th>Last Watered</th>
+              <th>Every</th>
+              <th>Next Watering</th>
+              <th>Status</th>
+              <th>Health</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {sortedPlants.map((plant) => (
+              <tr key={plant.id}>
+                <td>{plant.name}</td>
+                <td>{plant.gardenZone}</td>
+                <td>{plant.lastWatered || "Not set"}</td>
+                <td>{plant.wateringFrequency} days</td>
+                <td>{plant.nextWateringDate || "Not set"}</td>
+                <td>{plant.wateringStatus}</td>
+                <td>{plant.healthStatus}</td>
+                <td><button onClick={() => onWater(plant.id)}>Water Today</button></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
   );
