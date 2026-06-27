@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": 1781034632954,
+    "name": "dawid",
+    "email": "dawidnowak3@o2.pl",
+    "password": "$2a$10$OFcgqAykouQVVCQuN.jLbeBFnTsc8iLz7x/VnHpp3c/3b0aYbQq9m",
+    "createdAt": "2026-06-09T19:50:32.954Z"
+  },
+  {
+    "id": 1781035269689,
+    "name": "Tomato",
+    "email": "dawidnowak6@o2.pl",
+    "password": "$2a$10$K87EmJPpG1VBPYgu9Z3EIeI8BhoEfaO4ajPZ7AlgcXMBJMT0RxENm",
+    "createdAt": "2026-06-09T20:01:09.689Z"
+  },
+  {
+    "id": 1781256285578,
+    "name": "Janosik",
+    "email": "kildare@gmail.com",
+    "password": "$2a$10$LjGmiuT7hoHOU7SQaG2O0.BD0/VnGXIl6pqRunZNcXNkUdHIhlfQu",
+    "createdAt": "2026-06-12T09:24:45.578Z"
+  },
+  {
+    "id": 1781262741995,
+    "name": "ffffff",
+    "email": "6@o2.pl",
+    "password": "$2a$10$E38V.4TACNZGCoPbyOTyUetKBsU1XlmyGjyX.N/7JLAniCIdDJU8u",
+    "createdAt": "2026-06-12T11:12:21.995Z"
+  },
+  {
+    "id": 1781435886939,
+    "name": "SirLysy",
+    "email": "daw@o2.pl",
+    "password": "$2a$10$fTC4mhM4IKrmAzIN4MGDu.vwBUjjMGvQ2HUNnCB7IVGIlJ6yPBg1u",
+    "createdAt": "2026-06-14T11:18:06.939Z"
+  }
+]

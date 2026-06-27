@@ -1,1 +1,300 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Tomato",
+    "type": "vegetable",
+    "gardenZone": "Greenhouse",
+    "locationDescription": "Near the fence, first row right side side.",
+    "plantedDate": "2026-05-20",
+    "lastWatered": "2026-06-14",
+    "wateringFrequency": 3,
+    "healthStatus": "Healthy",
+    "notes": "Growing well. Needs support stick soon.",
+    "plantPhoto": "/uploads/1781523528516-1781509008615-IMG_0818.jpeg",
+    "locationPhoto": "/uploads/1781523528525-1781509030791-IMG_0819.jpeg",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "text": "Tomato planted in the back garden."
+      },
+      {
+        "date": "2026-06-01",
+        "text": "Plant watered and checked."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-14",
+        "text": "Plant watered."
+      }
+    ],
+    "markerX": "43.30",
+    "markerY": "87.64"
+  },
+  {
+    "id": 2,
+    "name": "Dahlias",
+    "type": "flower",
+    "gardenZone": "Middle Patio freestanding plants",
+    "locationDescription": "Small pot beside the patio stairs.",
+    "plantedDate": "2026-05-25",
+    "lastWatered": "2026-06-14",
+    "wateringFrequency": 2,
+    "healthStatus": "Healthy",
+    "notes": "Is growing quickly.",
+    "plantPhoto": "/uploads/1781510124797-IMG_0782.jpeg",
+    "locationPhoto": "/uploads/1781510124805-IMG_0783.jpeg",
+    "history": [
+      {
+        "date": "2026-05-25",
+        "text": "Mint added to patio pot."
+      },
+      {
+        "date": "2026-06-02",
+        "text": "Watered in the morning."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-14",
+        "text": "Plant watered."
+      }
+    ],
+    "markerX": "29.90",
+    "markerY": "53.76"
+  },
+  {
+    "id": 3,
+    "name": "Red Rose",
+    "type": "flower",
+    "gardenZone": "Back Garden - Patio Right",
+    "locationDescription": "Rear garden, right side , on small shed wall.",
+    "plantedDate": "2026-05-18",
+    "lastWatered": "2026-06-15",
+    "wateringFrequency": 4,
+    "healthStatus": "Healthy",
+    "notes": "Leaves look a bit dry.",
+    "plantPhoto": "/uploads/1781510141937-IMG_0788.jpeg",
+    "locationPhoto": "/uploads/1781510141963-IMG_0789.jpeg",
+    "history": [
+      {
+        "date": "2026-05-18",
+        "text": "Rose planted in front garden."
+      },
+      {
+        "date": "2026-05-25",
+        "text": "Last watering recorded."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-09",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-14",
+        "text": "Plant watered."
+      },
+      {
+        "date": "2026-06-15",
+        "text": "Plant watered."
+      }
+    ],
+    "markerX": "52.82",
+    "markerY": "47.55"
+  },
+  {
+    "id": 1781436666519,
+    "name": "Strawberry",
+    "type": "Fruit",
+    "gardenZone": "Middle Patio freestanding plants",
+    "locationDescription": "Small pot beside the patio stairs.",
+    "plantedDate": "2026-06-10",
+    "lastWatered": "2026-06-14",
+    "wateringFrequency": 2,
+    "healthStatus": "Healthy",
+    "notes": "Grow nice",
+    "plantPhoto": "/uploads/1781510159409-IMG_0784.jpeg",
+    "locationPhoto": "/uploads/1781510159421-IMG_0785.jpeg",
+    "history": [
+      {
+        "date": "2026-06-14",
+        "text": "Plant record created."
+      }
+    ],
+    "markerX": "8.34",
+    "markerY": "64.32"
+  },
+  {
+    "id": 1781516020101,
+    "name": "Rhododendron",
+    "type": "Shrub",
+    "gardenZone": "Back Garden - Left Bed",
+    "locationDescription": "",
+    "markerX": "60.18",
+    "markerY": "59.35",
+    "plantedDate": "2026-06-01",
+    "lastWatered": "2026-06-15",
+    "wateringFrequency": 5,
+    "healthStatus": "Healthy",
+    "notes": "looks good",
+    "plantPhoto": "/uploads/1781516020052-IMG_0786.jpeg",
+    "locationPhoto": "/uploads/1781524139862-1781516059016-IMG_0787.jpeg",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  },
+  {
+    "id": 1781516838152,
+    "name": "Apple tree",
+    "type": "Tree",
+    "gardenZone": "Patio Shed",
+    "locationDescription": "",
+    "markerX": "83.96",
+    "markerY": "63.70",
+    "plantedDate": "2026-04-28",
+    "lastWatered": "2026-06-15",
+    "wateringFrequency": 5,
+    "healthStatus": "Healthy",
+    "notes": "",
+    "plantPhoto": "/uploads/1781516838129-IMG_0790.jpeg",
+    "locationPhoto": "/uploads/1781524159786-1781516864125-1781516838136-IMG_0791.jpeg",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  },
+  {
+    "id": 1781520285270,
+    "name": "Canna Lily",
+    "type": "Shrub",
+    "gardenZone": "Patio Pergola plants",
+    "locationDescription": "Under pergola",
+    "markerX": "32.72",
+    "markerY": "99.72",
+    "plantedDate": "2026-06-02",
+    "lastWatered": "2026-06-03",
+    "wateringFrequency": 5,
+    "healthStatus": "Healthy",
+    "notes": "",
+    "plantPhoto": "/uploads/1781520285243-IMG_0792.jpeg",
+    "locationPhoto": "/uploads/1781524198740-1781522247127-1781520331326-IMG_0793.jpeg",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  },
+  {
+    "id": 1781523940488,
+    "name": "Peace Lily",
+    "type": "Flower",
+    "gardenZone": "Indoor Plants",
+    "locationDescription": "Kitchen window",
+    "markerX": "47.01",
+    "markerY": "50.34",
+    "plantedDate": "2026-03-05",
+    "lastWatered": "2026-06-15",
+    "wateringFrequency": 3,
+    "healthStatus": "Healthy",
+    "notes": "Looks great",
+    "plantPhoto": "/uploads/1781523940476-IMG_0826.jpeg",
+    "locationPhoto": "/uploads/1781523940481-IMG_0827.jpeg",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  },
+  {
+    "id": 1781524107515,
+    "name": "Dianthus",
+    "type": "Flower",
+    "gardenZone": "Front Garden",
+    "locationDescription": "Front garden",
+    "markerX": "14.93",
+    "markerY": "32.64",
+    "plantedDate": "2026-06-08",
+    "lastWatered": "2026-06-15",
+    "wateringFrequency": 4,
+    "healthStatus": "Healthy",
+    "notes": "looks good",
+    "plantPhoto": "/uploads/1781524107485-IMG_0814.jpeg",
+    "locationPhoto": "/uploads/1781524107494-IMG_0813.jpeg",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  },
+  {
+    "id": 1781524428041,
+    "name": "Onion",
+    "type": "Vegetable",
+    "gardenZone": "Vegetable Bed Left",
+    "locationDescription": "left veg bed",
+    "markerX": "84.82",
+    "markerY": "65.87",
+    "plantedDate": "",
+    "lastWatered": "",
+    "wateringFrequency": 3,
+    "healthStatus": "Healthy",
+    "notes": "grow fast",
+    "plantPhoto": "/uploads/1781524427918-IMG_0820.jpeg",
+    "locationPhoto": "/uploads/1781524427926-1781522112433-vegleft.png",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  },
+  {
+    "id": 1781524568483,
+    "name": "Peony",
+    "type": "Flower",
+    "gardenZone": "Back Garden Right Fence",
+    "locationDescription": "",
+    "markerX": "47.18",
+    "markerY": "39.47",
+    "plantedDate": "2026-06-08",
+    "lastWatered": "2026-06-14",
+    "wateringFrequency": 4,
+    "healthStatus": "Healthy",
+    "notes": "Perfect flowers",
+    "plantPhoto": "/uploads/1781524568446-IMG_0794.jpeg",
+    "locationPhoto": "/uploads/1781524568456-IMG_0795.jpeg",
+    "history": [
+      {
+        "date": "2026-06-15",
+        "text": "Plant record created."
+      }
+    ]
+  }
+]
